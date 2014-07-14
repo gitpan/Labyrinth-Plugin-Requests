@@ -1,6 +1,6 @@
 {
     "name": "Labyrinth-Plugin-Requests",
-    "version": "1.02",
+    "version": "1.03",
     "abstract": "Requests handler for the Labyrinth framework",
     "author": [
         "Barbie (BARBIE) <barbie@cpan.org>"
@@ -36,7 +36,7 @@
         "runtime" : {
             "requires" : {
                 "perl": "5.006",
-                "Labyrinth": "5.20"
+                "Labyrinth": "5.22"
             }
         }
     },
@@ -44,7 +44,7 @@
     "provides": {
         "Labyrinth::Plugin::Requests": {
             "file": "lib/Labyrinth/Plugin/Requests.pm",
-            "version": "1.02"
+            "version": "1.03"
         }
     },
     "no_index": {

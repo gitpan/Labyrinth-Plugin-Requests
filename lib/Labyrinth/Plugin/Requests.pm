@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '1.02';
+$VERSION = '1.03';
 
 =head1 NAME
 
@@ -22,7 +22,7 @@ Contains all the request administration functionality for Labyrinth.
 use base qw(Labyrinth::Plugin::Base);
 
 use Labyrinth::Audit;
-use Labyrinth::Globals  qw(:default);
+use Labyrinth::Globals;
 use Labyrinth::DBUtils;
 use Labyrinth::MLUtils;
 use Labyrinth::Support;
@@ -96,17 +96,31 @@ my @types = map {{'id'=>$_,'value'=> $types{$_}}} sort keys %types;
 
 =item Admin
 
+Handle main administrive duties, and display requests admin page.
+
 =item Add
+
+Add a request.
 
 =item Edit
 
+Edit a request.
+
 =item Save
+
+Save a request.
 
 =item Delete
 
+Delete one or more requests.
+
 =item SecureSelect
 
+Security selection box. This denotes whether request requires SSL.
+
 =item SecureName
+
+Give an id, returns the security status.
 
 =back
 
